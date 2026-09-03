@@ -375,6 +375,11 @@ button {
   font-size: 12px;
   font-weight: 800;
 }
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
 .card-link:hover {
   color: var(--accent);
 }
