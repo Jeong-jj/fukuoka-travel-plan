@@ -2,6 +2,7 @@
   "name": "fukuoka-trip-planner",
   "version": "1.4.0",
   "private": true,
+  "packageManager": "pnpm@11.1.1",
   "engines": {
     "node": ">=22.13.0"
   },
@@ -10,6 +11,7 @@
     "build": "vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
+    "lint:app": "oxlint app lib hooks",
     "format": "oxfmt"
   },
   "dependencies": {
