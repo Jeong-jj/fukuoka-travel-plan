@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      PAGES_ASSET_PREFIX: /fukuoka-travel-plan
+      PAGES_BASE_PATH: /fukuoka-travel-plan/
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -48,7 +48,7 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4
         with:
-          path: dist/client
+          path: dist
 
   deploy:
     if: github.event_name != 'pull_request'

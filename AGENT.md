@@ -13,12 +13,13 @@
 
 ## 프로젝트 기본 정보
 
-- React 19, TypeScript, vinext, Vite, Tailwind CSS 4 기반이다.
+- React 19, TypeScript, Vite, Tailwind CSS 4 기반의 정적 SPA다.
 - 패키지 매니저는 pnpm이다.
-- 주요 화면은 `app/page.tsx`, 전역 스타일은 `app/globals.css`에서 관리한다.
+- 주요 화면은 `src/App.tsx`, 전역 스타일은 `src/index.css`에서 관리한다.
 - 공통 UI는 `components/ui`, 훅은 `hooks`, 유틸리티는 `lib`에 둔다.
 - 개발은 `pnpm dev`, 빌드는 `pnpm build`로 검증한다.
-- 배포 산출물인 `.next`, `.vinext`, `.wrangler`, `dist`를 직접 수정하지 않는다.
+- `main` 브랜치에 푸시하면 GitHub Actions가 GitHub Pages에 배포한다.
+- 빌드 산출물인 `dist`를 직접 수정하지 않는다.
 
 ## 작업 전 확인
 

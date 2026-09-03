@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { BedDouble, ChevronDown, ExternalLink, MapPin, Plane, WalletCards } from 'lucide-react';
 
@@ -80,7 +78,7 @@ const budgets = [['확정 숙박비','Atlas Apartment · 4박 / 2인','¥79,834'
 
 function Cards({ rows }: { rows: string[][] }) { return <div className="cards">{rows.map(([title, desc]) => <article className="card" key={title}><h3>{title}</h3><p>{desc}</p></article>)}</div>; }
 
-export default function Home() {
+export default function App() {
   const [tab, setTab] = useState<Tab>('일정'); const [day, setDay] = useState(0); const [hotelOpen, setHotelOpen] = useState(false);
   return <main className="site-shell"><div className="ambient ambient-a"/><div className="ambient ambient-b"/><div className="wrap">
     <header className="hero"><div className="eyebrow">FUKUOKA TRIP PLANNER · <strong>BETA 1.4.0</strong></div><div className="hero-row"><div><h1>후쿠오카<br className="mobile-break"/> 4박 5일</h1><p>2026.09.18 — 09.22 · 남자 둘 · 도시 / 역사 / 축제 / 쇼핑 / 먹거리 / 술</p></div><div className="stamp">九州<br/><span>FUKUOKA</span></div></div>

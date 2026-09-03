@@ -1,6 +1,6 @@
 # 후쿠오카 여행 플래너 Beta 1.4.0
 
-React 19 + TypeScript 기반의 모바일 퍼스트 여행 웹입니다.
+React 19 + TypeScript + Vite 기반의 모바일 퍼스트 정적 여행 웹입니다.
 
 ## 실행
 
@@ -8,6 +8,8 @@ React 19 + TypeScript 기반의 모바일 퍼스트 여행 웹입니다.
 pnpm install
 pnpm dev
 ```
+
+`main` 브랜치에 푸시하면 GitHub Actions가 빌드 후 GitHub Pages에 배포합니다.
 
 ## 반응형 기준
 
