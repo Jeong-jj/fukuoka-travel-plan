@@ -397,6 +397,112 @@ button {
 .card-link:hover {
   color: var(--accent);
 }
+.food-regions {
+  display: grid;
+  gap: 26px;
+}
+.food-region {
+  min-width: 0;
+}
+.food-region-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--line);
+}
+.food-region-head span {
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+}
+.food-region-head h3 {
+  margin: 0;
+  font: 700 22px/1.2 Georgia, "Noto Serif KR", serif;
+  letter-spacing: -0.03em;
+}
+.food-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.food-group {
+  min-width: 0;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 15px;
+}
+.food-group-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 15px 10px;
+}
+.food-group-head h4 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+.food-group-head > span {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+}
+.food-options {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+.food-option {
+  display: flex;
+  min-height: 58px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 15px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.food-option + .food-option {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+.food-option:hover,
+.food-option:focus-visible {
+  background: rgba(255, 122, 61, 0.08);
+}
+.food-option > div {
+  min-width: 0;
+}
+.food-option strong,
+.food-option small {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.food-option strong {
+  font-size: 13px;
+  line-height: 1.4;
+}
+.food-option small {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.4;
+}
+.food-option > svg {
+  flex: 0 0 auto;
+  color: var(--accent);
+}
+.food-rank {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.05em;
+}
 .responsive-table {
   border-top: 1px solid var(--line);
 }
@@ -583,7 +689,8 @@ footer {
   .timeline-item h3 {
     font-size: 16px;
   }
-  .cards {
+  .cards,
+  .food-groups {
     grid-template-columns: 1fr;
   }
   .responsive-table {
