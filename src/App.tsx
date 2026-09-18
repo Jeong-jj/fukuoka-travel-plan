@@ -16,21 +16,21 @@ const days = [
     ['16:30 ~', '텐진 · 미나텐진 · 다이묘 쇼핑', 'Standard Products, GU, BOOK OFF, 몽벨, 주류·카메라 매장'],
     ['저녁', '텐진 야타이', '저녁과 술을 한 자리에서 해결'],
   ]},
-  { date: '9/19 토', title: 'DAY 2 · 히타', state: '핵심 원정', items: [
+  { date: '9/19 토', title: 'DAY 2 · 후쿠오카성 / 오호리', state: '회복 + 시내', items: [
+    ['늦은 오전', '여유 있게 하루 시작', '전날 이동 피로를 풀고 숙소 주변에서 브런치'],
+    ['오후', '후쿠오카성터', '마이즈루공원과 성터를 천천히 산책'],
+    ['오후', '오호리공원', '호수 산책 · 카페 · 휴식'],
+    ['저녁', '텐진 · 다이묘', '시내로 돌아와 저녁과 술'],
+  ]},
+  { date: '9/20 일', title: 'DAY 3 · 히타', state: '핵심 원정', items: [
     ['09:00', '니시테츠 텐진 고속버스터미널', '예약 불필요 좌석정원제 · 연휴이므로 일찍 줄서기'],
     ['09:27', '텐진 → 히타', '고속버스 히타호 · 11:00 전후 도착 · 왕복 ¥3,580/인'],
     ['점심', '히타마부시 센야', '10:30~16:30 · LO 15:30 · 2명 예약 불가, 현장 번호표'],
-    ['오후', '삿포로 맥주공장', '자유견학 + 테이스팅 · 살롱 10:00~16:30, 주문 마감 16:00 · 흑라벨/에비스 각 ¥450'],
-    ['15:20 ~', '琴ひら温泉 유메산스이', '토요일 11:00~21:00 · 최종접수 20:30 · 성인 ¥800 · 밝을 때 계곡 노천탕'],
+    ['오후', '삿포로 맥주공장', '일요일 정상 영업 · 무료 자유견학 + 유료 테이스팅 · 주문 마감 16:00'],
+    ['15:20 ~', '琴ひら温泉 유메산스이', '일요일 11:00~21:00 · 최종접수 20:30 · 성인 ¥800 · 밝을 때 계곡 노천탕'],
     ['17:00 ~', '히타 야키소바', '귀환 버스 시간을 보며 저녁'],
     ['18:20', '히타 → 텐진 목표편', '19:50 도착 예상 · 놓치면 19:00 → 20:30 백업 막차'],
     ['비상', '택시 플랜 B', '히타→후쿠오카 약 ¥20,000~25,000+ · 고속도로비 별도 가능'],
-  ]},
-  { date: '9/20 일', title: 'DAY 3 · 다자이후', state: '역사 + 시내', items: [
-    ['오전', '니시테츠 후쿠오카(텐진)역 출발', '니시테츠 전철로 다자이후 이동'],
-    ['오전 ~ 점심', '다자이후 텐만구', '참배 · 산도 산책 · 우메가에모치'],
-    ['오후', '후쿠오카 귀환', '텐진·나카스 보완 일정과 식사'],
-    ['저녁', '후쿠오카 로컬 식당', '저녁과 술은 한 식당에서'],
   ]},
   { date: '9/21 월', title: 'DAY 4 · 미야지다케', state: '축제 + 2차', items: [
     ['10:00 ~ 10:30', '하카타역 출발 목표', 'JR 가고시마 본선 일반/쾌속 · 하카타→후쿠마 약 25분', 'https://m.blog.naver.com/yunni_gongbang/224406531097'],
@@ -40,11 +40,13 @@ const days = [
     ['복귀', '후쿠마 → 하카타', '출발 직전 Google Maps로 실시간 최적 경로 재검색'],
     ['저녁', '후쿠오카 저녁 + 2차 술집', '이번 여행에서 별도 2차를 잡는 날'],
   ]},
-  { date: '9/22 화', title: 'DAY 5 · 후쿠오카성 + 오호리', state: '관광 + 귀국', items: [
+  { date: '9/22 화', title: 'DAY 5 · 다자이후', state: '역사 + 귀국', items: [
     ['10:00', '체크아웃 → Bounce 짐 보관', '텐진역 인근 Tenjin Station North Exit · 앱 예약 · 짐 2개 ¥1,700'],
-    ['오전', '후쿠오카성터', '짐 없이 가볍게 마지막 관광'],
-    ['점심 ~ 오후', '오호리공원', '산책 · 카페 · 점심'],
-    ['오후', '텐진 마지막 쇼핑', '보관 짐 회수 후 공항 이동'],
+    ['10:30 전후', '니시테츠 후쿠오카(텐진)역 출발', '짐 없이 니시테츠 전철로 다자이후 이동'],
+    ['11:30 ~ 14:00', '다자이후 텐만구', '참배 · 산도 산책 · 점심 · 우메가에모치'],
+    ['14:30', '다자이후 출발', '출국 여유를 위해 늦어도 14:30에는 텐진으로 복귀'],
+    ['15:30 전후', '텐진 도착 → 짐 회수', 'Bounce에서 짐을 찾고 공항으로 이동'],
+    ['16:00 ~ 16:30', '후쿠오카 공항 도착 목표', '국제선 수속 시간을 넉넉하게 확보'],
     ['19:40', '후쿠오카 출발', '여유 있게 공항 도착'],
   ]},
 ];
@@ -53,7 +55,7 @@ const sights: CardRow[] = [
   ['히타', '마메다마치 · 히타마부시 · 삿포로 맥주공장 · 유메산스이 · 히타 야키소바를 하루에 연결'],
   ['다자이후 텐만구', '니시테츠 텐진 출발. 참배와 산도, 우메가에모치까지 묶는 반나절'],
   ['미야지다케 신사', '9/21 공휴일·축제일. 오쿠다리 정확한 시각은 공식 발표 후 확인'],
-  ['후쿠오카성터 + 오호리공원', '귀국일 Bounce에 짐을 맡긴 뒤 걷는 마지막 관광 코스'],
+  ['후쿠오카성터 + 오호리공원', '도착 다음 날 늦게 시작해 여행 피로를 풀며 걷는 시내 산책 코스'],
 ];
 
 const transport: CardRow[] = [
@@ -130,7 +132,7 @@ function FoodDirectory() { return <div className="food-regions">{foodRegions.map
 export default function App() {
   const [tab, setTab] = useState<Tab>('일정'); const [day, setDay] = useState(0); const [hotelOpen, setHotelOpen] = useState(false);
   return <main className="site-shell"><div className="ambient ambient-a"/><div className="ambient ambient-b"/><div className="wrap">
-    <header className="hero"><div className="eyebrow">FUKUOKA TRIP PLANNER · <strong>BETA 1.5.2</strong></div><div className="hero-row"><div><h1>후쿠오카<br className="mobile-break"/> 4박 5일</h1><p>2026.09.18 — 09.22 · 남자 둘 · 도시 / 역사 / 축제 / 쇼핑 / 먹거리 / 술</p></div><div className="stamp">九州<br/><span>FUKUOKA</span></div></div>
+    <header className="hero"><div className="eyebrow">FUKUOKA TRIP PLANNER · <strong>BETA 1.5.3</strong></div><div className="hero-row"><div><h1>후쿠오카<br className="mobile-break"/> 4박 5일</h1><p>2026.09.18 — 09.22 · 남자 둘 · 도시 / 역사 / 축제 / 쇼핑 / 먹거리 / 술</p></div><div className="stamp">九州<br/><span>FUKUOKA</span></div></div>
       <div className="meta-list"><span className="meta"><Plane size={16}/> 9/18 13:40 도착</span><span className="meta"><Plane size={16}/> 9/22 19:40 출발</span><span className="meta"><WalletCards size={16}/> 공용비 ¥80,000</span><button className="meta hotel-trigger" onClick={()=>setHotelOpen(v=>!v)} aria-expanded={hotelOpen}><BedDouble size={16}/> Atlas Apartment · 4박 ¥79,834 <ChevronDown size={15} className={hotelOpen?'rotate':''}/></button></div>
       {hotelOpen && <section className="hotel-panel"><div><span>확정 숙소</span><h2>Atlas Apartment</h2><p><MapPin size={15}/> 후쿠오카시 주오구 다이묘 1초메 1-9</p></div><dl><div><dt>체크인</dt><dd>9/18 16:00</dd></div><div><dt>체크아웃</dt><dd>9/22 10:00</dd></div><div><dt>숙박비</dt><dd>¥79,834 / 2인</dd></div><div><dt>1인 부담</dt><dd>¥39,917</dd></div></dl><p className="hotel-note">Tenjin-Minami역 약 550m · 히타/다자이후는 텐진 출발, 미야지다케는 하카타역 이동</p><a className="link-button" href="https://maps.google.com/?q=1-1-9+Daimyo+Chuo+Ward+Fukuoka" target="_blank" rel="noreferrer">Google Maps <ExternalLink size={15}/></a></section>}
       <a className="saved-map" href="https://maps.app.goo.gl/DgXaRUgMjiE5ZEkS9?g_st=i" target="_blank" rel="noreferrer"><span className="saved-map-icon"><MapPinned size={21}/></span><span className="saved-map-copy"><small>GOOGLE MAPS SAVED LIST</small><strong>후쿠오카 전체 저장 목록</strong><em>관광 · 쇼핑 · 먹거리 한 번에 보기</em></span><ExternalLink className="saved-map-arrow" size={18}/></a>
@@ -141,6 +143,6 @@ export default function App() {
       {tab==='관광'&&<><div className="section-head"><div><span>PLACES</span><h2>관광 포인트</h2></div></div><Cards rows={sights}/></>}{tab==='교통'&&<><div className="section-head"><div><span>TRANSIT</span><h2>교통 상세</h2></div></div><Cards rows={transport}/></>}{tab==='먹거리'&&<><div className="section-head"><div><span>FOOD</span><h2>지역별 먹거리 후보</h2></div></div><FoodDirectory/></>}
       {tab==='쇼핑'&&<><div className="section-head"><div><span>SHOPPING</span><h2>매장별 구매 목록</h2></div></div><div className="responsive-table"><div className="table-head"><span>매장</span><span>아이템</span><span>구매 기준</span></div>{shops.map(([a,b,c])=><div className="table-row" key={a}><div data-label="매장">{a}</div><div data-label="아이템">{b}</div><div data-label="구매 기준">{c}</div></div>)}</div><div className="market-links">{shopLinks.map(([name,href])=><a href={href} target="_blank" rel="noreferrer" key={name}>{name}<ExternalLink size={14}/></a>)}</div></>}
       {tab==='예산'&&<><div className="section-head"><div><span>BUDGET</span><h2>확정·예상 비용</h2></div><em>개인 쇼핑 별도</em></div><div className="budget-summary"><div><span>숙소 확정</span><strong>¥79,834</strong></div><div><span>공용비 목표</span><strong>¥80,000</strong></div><div><span>짐 보관</span><strong>¥1,700</strong></div></div><div className="responsive-table budget-table"><div className="table-head"><span>항목</span><span>산출</span><span>금액</span></div>{budgets.map(([a,b,c])=><div className="table-row" key={a}><div data-label="항목">{a}</div><div data-label="산출">{b}</div><div data-label="금액">{c}</div></div>)}</div></>}
-    </section><footer>FUKUOKA TRIP PLANNER · BETA 1.5.2 · 일정과 교통 시각은 여행 당일 공식 안내와 Google Maps로 재확인</footer>
+    </section><footer>FUKUOKA TRIP PLANNER · BETA 1.5.3 · 일정과 교통 시각은 여행 당일 공식 안내와 Google Maps로 재확인</footer>
   </div></main>;
 }
