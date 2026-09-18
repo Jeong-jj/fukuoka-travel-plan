@@ -242,15 +242,26 @@ button {
   padding: 13px 15px;
   color: var(--ink);
   text-decoration: none;
-  background: linear-gradient(110deg, rgba(232, 184, 93, 0.14), rgba(255, 122, 61, 0.08));
+  background: linear-gradient(
+    110deg,
+    rgba(232, 184, 93, 0.14),
+    rgba(255, 122, 61, 0.08)
+  );
   border: 1px solid rgba(232, 184, 93, 0.35);
   border-radius: 17px;
-  transition: border-color 0.2s, transform 0.2s, background 0.2s;
+  transition:
+    border-color 0.2s,
+    transform 0.2s,
+    background 0.2s;
 }
 .saved-map:hover,
 .saved-map:focus-visible {
   border-color: var(--gold);
-  background: linear-gradient(110deg, rgba(232, 184, 93, 0.2), rgba(255, 122, 61, 0.12));
+  background: linear-gradient(
+    110deg,
+    rgba(232, 184, 93, 0.2),
+    rgba(255, 122, 61, 0.12)
+  );
   transform: translateY(-1px);
 }
 .saved-map-icon {
@@ -476,7 +487,10 @@ button {
 }
 .food-region-head h3 {
   margin: 0;
-  font: 700 22px/1.2 Georgia, "Noto Serif KR", serif;
+  font:
+    700 22px/1.2 Georgia,
+    'Noto Serif KR',
+    serif;
   letter-spacing: -0.03em;
 }
 .food-groups {
@@ -616,6 +630,210 @@ button {
 .market-links a:hover {
   border-color: var(--accent);
 }
+.shopping-subtabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  margin-bottom: 24px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+}
+.shopping-subtabs button {
+  min-height: 46px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 850;
+  cursor: pointer;
+}
+.shopping-subtabs button.active {
+  background: var(--ink);
+  color: #111;
+}
+.coupon-heading {
+  margin-bottom: 20px;
+}
+.benefit-callouts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.benefit-callouts article {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(232, 184, 93, 0.24);
+  border-radius: 15px;
+  background: linear-gradient(
+    145deg,
+    rgba(232, 184, 93, 0.12),
+    rgba(255, 122, 61, 0.05)
+  );
+}
+.benefit-callouts span,
+.benefit-callouts strong,
+.benefit-callouts small {
+  display: block;
+}
+.benefit-callouts span {
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+}
+.benefit-callouts strong {
+  margin-top: 7px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.benefit-callouts small {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+.benefit-toolbar {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 18px 0 10px;
+}
+.benefit-toolbar label {
+  display: grid;
+  gap: 7px;
+}
+.benefit-toolbar label > span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.benefit-toolbar select {
+  width: 100%;
+  min-height: 48px;
+  appearance: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #171918;
+  color: var(--ink);
+  padding: 0 13px;
+  font-size: 14px;
+  font-weight: 750;
+}
+.benefit-toolbar select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.benefit-status {
+  margin: 0 0 12px;
+  color: #858680;
+  font-size: 11px;
+  line-height: 1.55;
+}
+.benefit-table {
+  border-top: 1px solid var(--line);
+}
+.benefit-table-head,
+.benefit-row {
+  display: grid;
+  grid-template-columns: minmax(145px, 1fr) minmax(105px, 0.68fr) minmax(
+      105px,
+      0.7fr
+    ) minmax(125px, 0.85fr) minmax(120px, 0.75fr) 88px;
+  gap: 14px;
+  align-items: center;
+}
+.benefit-table-head {
+  padding: 11px 10px;
+  color: #7f807c;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+.benefit-row {
+  min-height: 84px;
+  padding: 14px 10px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  line-height: 1.45;
+}
+.benefit-row > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.benefit-row > div:first-child strong,
+.benefit-row > div:nth-child(4) strong {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+}
+.benefit-row small {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.45;
+}
+.payment-badge {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 10px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+.payment-카카오페이 {
+  color: #15130b;
+  border-color: #fee500;
+  background: #fee500;
+}
+.payment-네이버페이 {
+  color: #07160d;
+  border-color: #03c75a;
+  background: #03c75a;
+}
+.payment-매장-쿠폰,
+.payment-게스트-카드 {
+  color: #1a1109;
+  border-color: var(--gold);
+  background: var(--gold);
+}
+.benefit-row a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 5px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 800;
+}
+.benefit-row a:hover,
+.benefit-row a:focus-visible {
+  color: var(--accent);
+}
+.benefit-notes {
+  margin-top: 16px;
+  padding: 15px 16px;
+  border-left: 3px solid var(--accent);
+  background: rgba(255, 122, 61, 0.06);
+}
+.benefit-notes strong {
+  font-size: 12px;
+}
+.benefit-notes p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
 .budget-summary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -748,6 +966,48 @@ footer {
   .cards,
   .food-groups {
     grid-template-columns: 1fr;
+  }
+  .benefit-callouts {
+    grid-template-columns: 1fr;
+  }
+  .benefit-toolbar {
+    grid-template-columns: 1fr;
+  }
+  .benefit-table {
+    border: 0;
+  }
+  .benefit-table-head {
+    display: none;
+  }
+  .benefit-row {
+    display: block;
+    min-height: 0;
+    margin-bottom: 10px;
+    padding: 9px 14px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--panel);
+  }
+  .benefit-row > div {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 9px;
+    align-items: start;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  .benefit-row > div:last-child {
+    border: 0;
+  }
+  .benefit-row > div:before {
+    content: attr(data-label);
+    color: #747671;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+  .benefit-row a {
+    min-height: 28px;
   }
   .responsive-table {
     border: 0;
